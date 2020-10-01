@@ -208,11 +208,13 @@ img.lazyload:not([src]) {
 /* section */
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
 }
 
 .section__inner {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,9 +333,9 @@ img.lazyload:not([src]) {
   font-family: 'Architects Daughter', cursive;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.4);
-  -webkit-transition: color .5s;
-  -o-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
   cursor: pointer;
 }
 
@@ -358,11 +360,11 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: top;
       -ms-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .section_002 .btn:hover .btn__line--left {
@@ -372,11 +374,11 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .section_002 .btn__line--bottom {
@@ -390,11 +392,11 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: right;
       -ms-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .section_002 .btn:hover .btn__line--bottom {
@@ -404,11 +406,11 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .section_002 .btn__line--top {
@@ -422,14 +424,14 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: right;
       -ms-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .section_002 .btn:hover .btn__line--top {
@@ -439,14 +441,14 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .section_002 .btn__line--right {
@@ -460,14 +462,14 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: top;
       -ms-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .section_002 .btn:hover .btn__line--right {
@@ -477,14 +479,92 @@ img.lazyload:not([src]) {
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+/* section_003 */
+
+.section_003 {
+  background-color: #0e2330;
+}
+
+.section_003 .main-title {
+  color: #fff;
+}
+
+.section_003 .block {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.section_003 .block__text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e2330;
+}
+
+.section_003 .block__text-wrapper--circle {
+  background-color: #e91e63;
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+}
+
+.section_003 .block__text {
+  position: absolute;
+  left: 0;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 100vh;
+  color: #fff;
+  white-space: nowrap;
+  cursor: default;
+  -webkit-animation: animationText 260s linear infinite;
+          animation: animationText 260s linear infinite;
+}
+
+.section_003 .block__text--circle {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+
+@-webkit-keyframes animationText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animationText {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 1024px) {

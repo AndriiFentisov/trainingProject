@@ -101,10 +101,12 @@ img.lazyload:not([src]) {
 
 /* section */
 .section {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
 }
 .section__inner {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +195,7 @@ img.lazyload:not([src]) {
     font-family: 'Architects Daughter', cursive;
     letter-spacing: 2px;
     color: rgba(255, 255, 255, .4);
-    transition: color .5s;
+    transition: color .3s;
     cursor: pointer;
     &:hover {
       color: rgba(255, 255, 255, 1);
@@ -211,12 +213,12 @@ img.lazyload:not([src]) {
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform .5s;
+    transition: transform .3s;
   }
   .btn:hover .btn__line--left {
     transform: scaleY(1);
     transform-origin: bottom;
-    transition: transform .5s;
+    transition: transform .3s;
   }
   .btn__line--bottom {
     left: 0;
@@ -225,12 +227,12 @@ img.lazyload:not([src]) {
     height: 1px;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform .5s;
+    transition: transform .3s;
   }
   .btn:hover .btn__line--bottom {
     transform: scaleX(1);
     transform-origin: left;
-    transition: transform .5s;
+    transition: transform .3s;
   }
   .btn__line--top {
     left: 0;
@@ -239,14 +241,14 @@ img.lazyload:not([src]) {
     height: 1px;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform .5s;
-    transition-delay: .5s;
+    transition: transform .3s;
+    transition-delay: .3s;
   }
   .btn:hover .btn__line--top {
     transform: scaleX(1);
     transform-origin: left;
-    transition: transform .5s;
-    transition-delay: .5s;
+    transition: transform .3s;
+    transition-delay: .3s;
   }
   .btn__line--right {
     right: 0;
@@ -255,15 +257,64 @@ img.lazyload:not([src]) {
     height: 100%;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform .5s;
-    transition-delay: .5s;
+    transition: transform .3s;
+    transition-delay: .3s;
   }
   .btn:hover .btn__line--right {
     transform: scaleY(1);
     transform-origin: bottom;
-    transition: transform .5s;
-    transition-delay: .5s;
+    transition: transform .3s;
+    transition-delay: .3s;
   }
 }
 
-
+/* section_003 */
+.section_003 {
+  background-color: #0e2330;
+  .main-title {
+    color: #fff;
+  }
+  .block {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+  .block__text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e2330;
+  }
+  .block__text-wrapper--circle {
+    background-color: #e91e63;
+    clip-path: circle(200px at center);
+  }
+  .block__text {
+    position: absolute;
+    left: 0;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 100vh;
+    color: #fff;
+    white-space: nowrap;
+    cursor: default;
+    animation: animationText 260s linear infinite;
+  }
+  .block__text--circle {
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+  }
+}
+@keyframes animationText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

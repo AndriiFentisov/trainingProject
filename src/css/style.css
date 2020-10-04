@@ -1025,6 +1025,98 @@ img.lazyload:not([src]) {
   }
 }
 
+/* section_008 */
+
+.section_008 {
+  background-color: #102626;
+}
+
+.section_008 .main-title {
+  color: #fff;
+}
+
+.section_008 .loader-reflection {
+  position: relative;
+  -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+}
+
+.section_008 .loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #0d2320;
+  -webkit-animation: animateNeonCircle 2s linear infinite;
+          animation: animateNeonCircle 2s linear infinite;
+}
+
+.section_008 .loader:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 255, 249, 0.4)));
+  background: -o-linear-gradient(bottom, transparent, rgba(0, 255, 249, 0.4));
+  background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
+  background-size: 100px 180px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.section_008 .loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #00fff9;
+  border-radius: 50%;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
+          box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
+}
+
+@-webkit-keyframes animateNeonCircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animateNeonCircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.section_008 .loader span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #102626;
+  border-radius: 50%;
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 17px;

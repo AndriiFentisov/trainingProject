@@ -1117,6 +1117,104 @@ img.lazyload:not([src]) {
   border-radius: 50%;
 }
 
+/* section_009 */
+
+.section_009 {
+  background-color: #111;
+}
+
+.section_009 .main-title {
+  color: #fff;
+}
+
+.section_009 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.section_009 .list__item {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+}
+
+.section_009 .btn {
+  position: relative;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  letter-spacing: 2px;
+  font-family: 'Architects Daughter', cursive;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.section_009 .btn:hover {
+  background: #ec0b36 url("../images/decor/btn/pixel.png");
+  background-size: 200px;
+  -webkit-transition-delay: .8s;
+       -o-transition-delay: .8s;
+          transition-delay: .8s;
+  -webkit-animation: animatePixelBgBtn 0.8s steps(8) forwards;
+          animation: animatePixelBgBtn 0.8s steps(8) forwards;
+}
+
+.section_009 .btn--violet:hover {
+  background: #730bec url("../images/decor/btn/pixel2.png");
+  background-size: 200px;
+  -webkit-transition-delay: .8s;
+       -o-transition-delay: .8s;
+          transition-delay: .8s;
+  -webkit-animation: animatePixelBgBtn 0.8s steps(8) forwards;
+          animation: animatePixelBgBtn 0.8s steps(8) forwards;
+}
+
+@-webkit-keyframes animatePixelBgBtn {
+  0% {
+    background-position-y: 0;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+@keyframes animatePixelBgBtn {
+  0% {
+    background-position-y: 0;
+  }
+
+  100% {
+    background-position-y: -480px;
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 17px;

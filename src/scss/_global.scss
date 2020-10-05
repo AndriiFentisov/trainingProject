@@ -642,3 +642,61 @@ img.lazyload:not([src]) {
     border-radius: 50%;
   }
 }
+
+/* section_009 */
+.section_009 {
+  background-color: #111;
+  .main-title {
+    color: #fff;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .list__item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .btn {
+    position: relative;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    letter-spacing: 2px;
+    font-family: 'Architects Daughter', cursive;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: .5s;
+    &:hover {
+      background: #ec0b36 url("../images/decor/btn/pixel.png");
+      background-size: 200px;
+      transition-delay: .8s;
+      animation: animatePixelBgBtn .8s steps(8) forwards;
+    }
+    &--violet:hover {
+      background: #730bec url("../images/decor/btn/pixel2.png");
+      background-size: 200px;
+      transition-delay: .8s;
+      animation: animatePixelBgBtn .8s steps(8) forwards;
+    }
+  }
+  @keyframes animatePixelBgBtn {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }
+}

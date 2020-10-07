@@ -1170,9 +1170,11 @@ img.lazyload:not([src]) {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: background .5s linear, border-color .3s linear, -webkit-animation .5s linear;
+  transition: background .5s linear, border-color .3s linear, -webkit-animation .5s linear;
+  -o-transition: animation .5s linear, background .5s linear, border-color .3s linear;
+  transition: animation .5s linear, background .5s linear, border-color .3s linear;
+  transition: animation .5s linear, background .5s linear, border-color .3s linear, -webkit-animation .5s linear;
 }
 
 .section_009 .btn:hover {
@@ -1215,14 +1217,150 @@ img.lazyload:not([src]) {
   }
 }
 
+/* section_010 */
+
+.section_010 .card {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  width: 600px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background: -o-linear-gradient(315deg, #d41e31, #491f8f);
+  background: linear-gradient(135deg, #d41e31, #491f8f);
+  margin: 20px;
+}
+
+.section_010 .card:hover .card__img {
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
+  height: 500px;
+}
+
+.section_010 .card:hover .card__content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section_010 .card__img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 400px;
+  -webkit-transition: height .5s, -webkit-transform .5s;
+  transition: height .5s, -webkit-transform .5s;
+  -o-transition: transform .5s, height .5s;
+  transition: transform .5s, height .5s;
+  transition: transform .5s, height .5s, -webkit-transform .5s;
+}
+
+.section_010 .card__content {
+  position: relative;
+  width: 50%;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility .5s, -webkit-transform .5s;
+  transition: opacity .5s, visibility .5s, -webkit-transform .5s;
+  -o-transition: opacity .5s, transform .5s, visibility .5s;
+  transition: opacity .5s, transform .5s, visibility .5s;
+  transition: opacity .5s, transform .5s, visibility .5s, -webkit-transform .5s;
+}
+
+.section_010 .card__title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.section_010 .card__text {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.section_010 .card__link {
+  position: relative;
+  display: inline-block;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 17px;
   }
 }
 
+@media (max-width: 991px) {
+  .section_010 .card {
+    width: auto;
+    max-width: 600px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transition: height .5s;
+    -o-transition: height .5s;
+    transition: height .5s;
+  }
+
+  .section_010 .card:hover {
+    height: 600px;
+  }
+
+  .section_010 .card:hover .card__img {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 350px;
+  }
+
+  .section_010 .card:hover .card__content {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+
+  .section_010 .card__content {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 16px;
+  }
+
+  .section_010 .card:hover .card__img {
+    height: 310px;
+  }
+
+  .section_010 .card__content {
+    padding: 20px;
+  }
+
+  .section_010 .card__title {
+    font-size: 30px;
   }
 }

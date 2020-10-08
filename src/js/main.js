@@ -40,3 +40,13 @@ function validateForms(selectorForm, rules) {
 }
 
 validateForms('.form', { email: { required: true, email: true }, firstName: { required: true }, lastName: { required: true }, tel: { required: true } });*/
+
+
+// section_01111111
+/*
+let pos = document.documentElement;
+
+pos.addEventListener('mousemove', e =>{
+    pos.style.setProperty('--x', e.clientX + 'px')
+    pos.style.setProperty('--y', e.clientY + 'px')
+})*/

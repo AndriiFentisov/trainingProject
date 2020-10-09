@@ -1389,6 +1389,100 @@ img.lazyload:not([src]) {
           filter: blur(20px);
 }
 
+/* section_012 */
+
+.section_012 {
+  background-color: #cde8f8;
+}
+
+.section_012 .main-title {
+  color: #fff;
+}
+
+.section_012 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+.section_012 .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+}
+
+.section_012 .loader {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.section_012 .loader--stick {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section_012 .loader span {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-animation: animateShadow 7s linear infinite;
+          animation: animateShadow 7s linear infinite;
+  -webkit-animation-delay: calc(.5s * var(--i));
+          animation-delay: calc(.5s * var(--i));
+}
+
+.section_012 .loader--stick span {
+  height: calc(30px * var(--i));
+}
+
+@-webkit-keyframes animateShadow {
+  0% {
+    -webkit-box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.6), 6px 6px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.6), 6px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    -webkit-box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes animateShadow {
+  0% {
+    -webkit-box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.6), 6px 6px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.6), 6px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    -webkit-box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.6), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 17px;

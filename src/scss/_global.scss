@@ -856,3 +856,52 @@ img.lazyload:not([src]) {
     }
   }
 }
+
+/* section_012 */
+.section_012 {
+  background-color: #cde8f8;
+  .main-title {
+    color: #fff;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  }
+  .loader {
+    position: relative;
+    display: flex;
+    filter: blur(1px);
+    &--stick {
+      align-items: flex-end;
+    }
+  }
+  .loader span {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, .6), inset 5px 5px 5px rgba(0, 0, 0, .1);
+    animation: animateShadow 7s linear infinite;
+    animation-delay: calc(.5s * var(--i));
+  }
+  .loader--stick span {
+    height: calc(30px * var(--i));
+  }
+  @keyframes animateShadow {
+    0% {
+      box-shadow: -6px -6px 10px rgba(255, 255, 255, .6), 6px 6px 10px rgba(0, 0, 0, .1);
+    }
+    100% {
+      box-shadow: inset -5px -5px 5px rgba(255, 255, 255, .6), inset 5px 5px 5px rgba(0, 0, 0, .1);
+    }
+  }
+}

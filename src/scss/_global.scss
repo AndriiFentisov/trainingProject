@@ -931,7 +931,7 @@ img.lazyload:not([src]) {
       height: 100%;
       left: 0;
       top: 0;
-      transition: all .4s;
+      transition: border-left .4s, border-right .4s, transform .4s;
     }
     &:hover {
       transform: scale(.8);
@@ -946,5 +946,59 @@ img.lazyload:not([src]) {
       border-bottom: 4px solid;
       transform: skewY(-20deg);
     }
+  }
+}
+
+/* section_014 */
+.section_014 {
+  background-color: #2e2e2e;
+  .main-title {
+    color: #fff;
+  }
+  .loader {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    animation: animateFlowerRotate 3s linear infinite;
+  }
+  @keyframes animateFlowerRotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .loader span {
+    width: 32px;
+    height: 32px;
+    background-color: #ff4757;
+    margin: 4px;
+    animation: animateFlowerScale 1.5s linear infinite;
+  }
+  @keyframes animateFlowerScale {
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  .loader span:nth-child(1) {
+    border-radius: 50% 50% 0 50%;
+    background-color: #ff7f50;
+    transform-origin: bottom right;
+  }
+  .loader span:nth-child(2) {
+    border-radius: 50% 50% 50% 0;
+    background-color: #70a1ff;
+    transform-origin: bottom left;
+    animation-delay: .5s;
+  }
+  .loader span:nth-child(3) {
+    border-radius: 50% 0 50% 50%;
+    background-color: #ff6b81;
+    transform-origin: top right;
+    animation-delay: 1.5s;
+  }
+  .loader span:nth-child(4) {
+    border-radius: 0 50% 50% 50%;
+    background-color: #eccc68;
+    transform-origin: top left;
+    animation-delay: 1s;
   }
 }

@@ -1308,19 +1308,19 @@ img.lazyload:not([src]) {
 
 /* section_01111111 */
 
-.section_011 {
+.section_01111111 {
   background-color: #000;
 }
 
-.section_011 .section__inner {
+.section_01111111 .section__inner {
   position: relative;
 }
 
-.section_011 .main-title {
+.section_01111111 .main-title {
   color: #fff;
 }
 
-.section_011 .title-light {
+.section_01111111 .title-light {
   font-size: 240px;
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -1328,7 +1328,7 @@ img.lazyload:not([src]) {
   cursor: default;
 }
 
-.section_011 .light {
+.section_01111111 .light {
   position: absolute;
   top: 0;
   left: 0;
@@ -1337,6 +1337,56 @@ img.lazyload:not([src]) {
   pointer-events: none;
   background: -o-radial-gradient(var(--x) var(--y), circle, transparent 10%, rgba(0, 0, 0, 0.95) 20%);
   background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 0.95) 20%);
+}
+
+/* section_011 */
+
+.section_011 {
+  position: relative;
+  z-index: 1;
+  background: -o-radial-gradient(#111, #000);
+  background: radial-gradient(#111, #000);
+}
+
+.section_011 .main-title {
+  color: #fff;
+}
+
+.section_011 .glowing {
+  position: relative;
+  font-size: 160px;
+  text-transform: uppercase;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), color-stop(50%, #222), color-stop(50%, #111), to(#111));
+  background: -o-linear-gradient(top, #222 0%, #222 50%, #111 50%, #111 100%);
+  background: linear-gradient(to bottom, #222 0%, #222 50%, #111 50%, #111 100%);
+  -webkit-background-clip: text;
+}
+
+.section_011 .glowing:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+  background: -o-linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+  background: linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.section_011 .glowing:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: -2;
+  background: -o-linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+  background: linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 
 @media (max-width: 1024px) {

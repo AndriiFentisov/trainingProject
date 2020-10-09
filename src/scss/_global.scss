@@ -792,7 +792,7 @@ img.lazyload:not([src]) {
 }
 
 /* section_01111111 */
-.section_011 {
+.section_01111111 {
   background-color: #000;
   .section__inner {
     position: relative;
@@ -815,5 +815,44 @@ img.lazyload:not([src]) {
     height: 100%;
     pointer-events: none;
     background: radial-gradient(circle  at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, .95) 20%);
+  }
+}
+
+/* section_011 */
+.section_011 {
+  position: relative;
+  z-index: 1;
+  background: radial-gradient(#111, #000);
+  .main-title {
+    color: #fff;
+  }
+  .glowing {
+    position: relative;
+    font-size: 160px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(to bottom, #222 0%, #222 50%, #111 50%, #111 100%);
+    -webkit-background-clip: text;
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      z-index: -1;
+      background: linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      z-index: -2;
+      background: linear-gradient(45deg, #ff0, #0f0, #f00, #00f, #0f0);
+      color: transparent;
+      -webkit-background-clip: text;
+      filter: blur(20px);
+    }
   }
 }

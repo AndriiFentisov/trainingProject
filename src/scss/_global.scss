@@ -1272,3 +1272,35 @@ img.lazyload:not([src]) {
     }
   }
 }
+
+/* section_018 */
+.section_018 {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  .main-title {
+    color: #fff;
+  }
+  .text-fade {
+    position: relative;
+    font-size: 64px;
+    color: #fff;
+    overflow: hidden;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+      animation: animateFade 10s linear forwards;
+    }
+  }
+  @keyframes animateFade {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+}

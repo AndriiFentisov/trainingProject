@@ -2098,6 +2098,56 @@ img.lazyload:not([src]) {
   }
 }
 
+/* section_019 */
+
+.section_019 {
+  font-family: 'Poppins', sans-serif;
+  background-color: #07252d;
+}
+
+.section_019 .main-title {
+  color: #fff;
+}
+
+.section_019 .text-title {
+  position: relative;
+  font-size: 72px;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: .7;
+  outline: none;
+  -webkit-animation: animateTextTitle 5s linear infinite;
+          animation: animateTextTitle 5s linear infinite;
+}
+
+@-webkit-keyframes animateTextTitle {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+
+  18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
+@keyframes animateTextTitle {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+
+  18.1%, 20.1%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 17px;

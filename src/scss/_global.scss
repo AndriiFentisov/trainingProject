@@ -1340,3 +1340,61 @@ img.lazyload:not([src]) {
     }
   }
 }
+
+/* section_020 */
+.section_020 {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  .main-title {
+    color: #fff;
+  }
+  .container-clip {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+  }
+  .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: clip-path .5s;
+  }
+  .clip1 {
+    background: url("../images/section_020/53010-yagody_salat_tarelka (1).jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+  }
+  .clip2 {
+    background: url("../images/section_020/53066-chizkejk_shokoladnyj_tarelka_kofe (1).jpg");
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+  }
+  .clip3 {
+    background: url("../images/section_020/55212-natyurmort_kotlety_ogurcy_nozh (1).jpg");
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+  }
+  .container-clip:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  .container-clip .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 00% 100%);
+    cursor: pointer;
+  }
+  .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    opacity: 0;
+    transition: bottom .5s, opacity .5s;
+  }
+  .container-clip .clip:hover .content {
+    bottom: 0;
+    opacity: 1;
+  }
+}

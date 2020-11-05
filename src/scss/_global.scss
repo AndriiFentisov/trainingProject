@@ -1398,3 +1398,41 @@ img.lazyload:not([src]) {
     opacity: 1;
   }
 }
+
+/* section_021 */
+.section_021 {
+  .section__inner {
+    position: relative;
+    overflow: hidden;
+  }
+  .video-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 20vw;
+    font-weight: 800;
+    line-height: .85;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .90);
+    mix-blend-mode: multiply;
+    span {
+      font-size: 0.4em;
+    }
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

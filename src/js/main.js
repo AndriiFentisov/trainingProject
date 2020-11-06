@@ -50,3 +50,16 @@ pos.addEventListener('mousemove', e =>{
     pos.style.setProperty('--x', e.clientX + 'px')
     pos.style.setProperty('--y', e.clientY + 'px')
 })*/
+
+
+// section_022
+/*
+function changeBg() {
+    const images = ['url("../images/section_022/1.jpg")', 'url("../images/section_022/2.jpg")', 'url("../images/section_022/3.jpg")', 'url("../images/section_022/4.jpg")', 'url("../images/section_022/5.jpg")', 'url("../images/section_022/6.jpg")', 'url("../images/section_022/7.jpg")', 'url("../images/section_022/8.jpg")'];
+
+    const randomPhoto = document.getElementById('randomPhoto');
+    const bg = images[Math.floor(Math.random() * images.length)];
+    randomPhoto.style.backgroundImage = bg;
+}
+
+setInterval(changeBg, 1000)*/
